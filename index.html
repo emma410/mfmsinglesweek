@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="mfm.png" alt="Logo" width="150px">
+            </div>
+            <div class="site-name">
+                <h1 id="mfm">MFMCF</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p><span class="black-text">Invite your friends for</span></p>
+        <h2>Single's Week Program 2024</h2>
+        <p><span class="black-text">your personalised DP!!</span></p>
+        <br>
+        <h5>It is super easy to get it immediately!</h5>
+        
+        <div class="form-container">
+            <input style="color: black; font-family: cursive;" type="text" id="name" placeholder="Name">
+            <input style="color: black; font-family: cursive;" type="text" id="department" placeholder="Department">
+            <input style="color: black; font-family: cursive;" type="text" id="level" placeholder="Level">
+            <input type="file" id="imageUpload" accept="image/*">
+            <div class="image-preview">
+                <img id="selectedImage" src="" alt="Selected Image">
+            </div>
+            <input type="range" id="imageSize" min="10" max="200" value="100">
+            <button id="generateButton">Generate DP</button>
+        </div>
+        
+        <div class="preview-container" id="previewContainer" style="display:none;">
+            <div class="preview-content" id="previewContent"></div>
+            <button id="downloadButton">Download Image</button>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
